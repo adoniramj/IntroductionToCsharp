@@ -1,15 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace IntroductionToCsharp
+class Program
 {
-    class Program
+    static void Main()
     {
-        static void Main(string[] args)
-        {
-        }
+        Console.WriteLine("Welcome to C# trainings");
+        Main1();
+    }
+
+    static void Main1()
+    {
+        Console.WriteLine("I am inside Main1");
     }
 }
+
