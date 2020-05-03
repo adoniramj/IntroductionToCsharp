@@ -4,12 +4,21 @@ class Program
 {
     static void Main()
     {
-        string str1 = "one\nTwo\nThree";
-        string str2 = "C:\\Desktop\\folder1"; //Using escape sequence
-        string str3 = @"C:\Desktop\folder1"; //Verbatim literal
-        Console.WriteLine(str1);
-        Console.WriteLine(str2);
-        Console.WriteLine(str3);
+        int i = 10;
+        bool b = true;
+
+        if(b)
+        {
+            Console.WriteLine("b is {0}", b);
+        }
+
+        if (b && i > 5)
+        {
+            Console.WriteLine("Both conditions are true");
+        }
+
+        bool bigger = i > 10 ? true : false;
+        Console.WriteLine(bigger);
     }
 
 }
