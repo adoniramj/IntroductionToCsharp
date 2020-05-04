@@ -4,21 +4,21 @@ class Program
 {
     static void Main()
     {
-        int i = 10;
-        bool b = true;
+       
+        bool? over18 = null;
 
-        if(b)
+        if (over18 == true)
         {
-            Console.WriteLine("b is {0}", b);
+            Console.WriteLine("Over 18");
         }
-
-        if (b && i > 5)
+        else if (over18 == false)
         {
-            Console.WriteLine("Both conditions are true");
+            Console.WriteLine("Under 18");
         }
-
-        bool bigger = i > 10 ? true : false;
-        Console.WriteLine(bigger);
+        else
+        {
+            Console.WriteLine("Did not answer question.");
+        }
     }
 
 }
