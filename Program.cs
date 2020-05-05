@@ -4,12 +4,21 @@ class Program
 {
     static void Main()
     {
-        string str = "100";
+        int[] EvenNumbers = new int[3];
 
-        int a = int.Parse(str);
+        EvenNumbers[0] = 2;
+        EvenNumbers[1] = 4;
+        EvenNumbers[2] = 6;
 
-        Console.WriteLine(a);
+        Console.WriteLine(EvenNumbers[1]);
+
+        string[] cars = { "Volvo", "BMW", "Ford", "Mazda" };
+
+        foreach (string i in cars){
+            Console.WriteLine(i);
+        }
+
+        cars[4] = "Ferrari";
     }
-
 }
 
